@@ -1,9 +1,8 @@
-var through = require('through')
-  , _ = require('underscore');
+var through = require('through');
 
 module.exports = function(file) {
   var output = '';
-  if(_.last(file.split('.')) !== 'html')
+  if(/\.html$/.test(file))
     return through();
 
   return through(function(buf) {
