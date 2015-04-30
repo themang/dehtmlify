@@ -2,7 +2,7 @@ var through = require('through');
 
 module.exports = function(file) {
   var output = '';
-  if(! /\.html|\.md|\.css$/.test(file))
+  if(! /\.html|\.md$/.test(file))
     return through();
 
   return through(function(buf) {

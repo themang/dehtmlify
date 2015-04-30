@@ -20,7 +20,7 @@
     "url": "https://github.com/themang/dehtmlify/issues"
   },
   "dependencies": {
-    "through": "~2.3.4",
+    "through": "~2.3.7",
     "underscore": "~1.5.2"
   }
 }
